@@ -1,0 +1,77 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\Desktop\\PTab\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProductsTab.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ProductsTab.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\PTab\\wwwroot\\Images\\1.png",
+      "PackagePath": "staticwebassets\\Images\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\PTab\\wwwroot\\Images\\2.png",
+      "PackagePath": "staticwebassets\\Images\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\PTab\\wwwroot\\Images\\3.JPG",
+      "PackagePath": "staticwebassets\\Images\\3.JPG"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\PTab\\wwwroot\\Images\\3.png",
+      "PackagePath": "staticwebassets\\Images\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\PTab\\wwwroot\\Images\\4.png",
+      "PackagePath": "staticwebassets\\Images\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\PTab\\wwwroot\\Images\\5.png",
+      "PackagePath": "staticwebassets\\Images\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\PTab\\wwwroot\\Images\\6.png",
+      "PackagePath": "staticwebassets\\Images\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\PTab\\wwwroot\\Images\\7.PNG",
+      "PackagePath": "staticwebassets\\Images\\7.PNG"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\PTab\\wwwroot\\Images\\8.PNG",
+      "PackagePath": "staticwebassets\\Images\\8.PNG"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\PTab\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\PTab\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\PTab\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\PTab\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProductsTab.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ProductsTab.props",
+      "PackagePath": "build\\ProductsTab.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ProductsTab.props",
+      "PackagePath": "buildMultiTargeting\\ProductsTab.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ProductsTab.props",
+      "PackagePath": "buildTransitive\\ProductsTab.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

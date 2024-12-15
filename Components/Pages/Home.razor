@@ -1,0 +1,98 @@
+﻿@page "/"
+@rendermode InteractiveServer
+<PageTitle>Products</PageTitle>
+
+<style>
+    .nav-tabs {
+    cursor:pointer;
+    }
+</style>
+<div class="container mt-5">
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link @(activeTab == "best-sellers" ? "active" : "")" @onclick='() => ChangeTab("best-sellers")'>پرفروش ‌ترین‌ها</a>
+        </li>
+        <li class="nav-item pe-2">
+            <a class="nav-link @(activeTab == "new-products" ? "active" : "")" @onclick='() => ChangeTab("new-products")'>جدیدترین‌ها</a>
+        </li>
+    </ul>
+
+    <div class="tab-content mt-4">
+        @if (activeTab == "best-sellers")
+        {
+            <div class="row">
+                @foreach (var product in BestSellers)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card card-border">
+                            <img src="@product.ImageUrl" class="card-img-top" alt="@product.Title">
+                            <div class="card-body">
+                                <h5 class="card-title">@product.Title</h5>
+                                <p class="card-text">@product.Description</p>
+                                <p class="card-text">@product.Id</p>
+                                <a href="Details/@product.Id" class="btn btn-primary">مشاهده</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else if (activeTab == "new-products")
+        {
+            <div class="row">
+                @foreach (var product in NewProducts)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card card-border">
+                            <img src="@product.ImageUrl" class="card-img-top" alt="@product.Title">
+                            <div class="card-body">
+                                <h5 class="card-title">@product.Title</h5>
+                                <p class="card-text">@product.Description</p>
+                                <p class="card-text">@product.Id</p>
+                                <a href="Details/@product.Id" class="btn btn-primary">مشاهده</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+
+    private string activeTab = "best-sellers"; // تب فعال
+
+    // لیست محصولات پرفروش
+    private List<Product> BestSellers = new List<Product>
+    {
+        new Product { Id = 1, Title = "محصول 1", Description = "توضیحات محصول 1", ImageUrl = "images/1.png" },
+        new Product { Id = 2, Title = "محصول 2", Description = "توضیحات محصول 2", ImageUrl = "images/2.png" },
+        new Product { Id = 3, Title = "محصول 3", Description = "توضیحات محصول 3", ImageUrl = "images/3.png" },
+        new Product { Id = 4, Title = "محصول 4", Description = "توضیحات محصول 4", ImageUrl = "images/4.png" },
+        new Product { Id = 5, Title = "محصول 5", Description = "توضیحات محصول 5", ImageUrl = "images/5.png" },
+        new Product { Id = 6, Title = "محصول 6", Description = "توضیحات محصول 6", ImageUrl = "images/6.png" }
+    };
+
+    // لیست جدیدترین محصولات
+    private List<Product> NewProducts = new List<Product>
+    {
+       new Product { Id = 4, Title = "محصول 4", Description = "توضیحات محصول 4", ImageUrl = "images/4.png" },
+        new Product { Id = 5, Title = "محصول 5", Description = "توضیحات محصول 5", ImageUrl = "images/5.png" }
+    };
+
+    // تغییر تب
+    private void ChangeTab(string tabName)
+    {
+        activeTab = tabName;
+    }
+
+    // مدل محصول
+    public class Product
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string ImageUrl { get; set; }
+    }
+}
